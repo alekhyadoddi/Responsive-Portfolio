@@ -145,6 +145,10 @@ h3, h2 {
   width: 274px;
   margin: 20px 0 25px;
   overflow: auto;
+  -webkit-animation-name: bonus; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  animation-name: bonus;
+  animation-duration: 4s;
 }
 
 .work:nth-child(even) {
@@ -324,5 +328,17 @@ width: 100%;
   .work{
     width: 100%;
     margin: 20px 20px 20px 0px;
+   
   }
-  }
+}
+
+@-webkit-keyframes bonus {
+  from {opacity:0.2 ;}
+  to {opacity:1;}
+}
+
+@keyframes bonus {
+  from {opacity:0.2 ;}
+  to {opacity:1;}
+}
+
